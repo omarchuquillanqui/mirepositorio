@@ -13,10 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: <%=ENV['C9_USER']%>
+  username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
-  host: <%=ENV['IP']%> 
+
 
 development:
   <<: *default
